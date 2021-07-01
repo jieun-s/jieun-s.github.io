@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Viilage</title>
+    <style>
+        .clear {
+            clear: both;
+        }
+
+        header {
+            /*width: 800px;*/
+            /*height: 500px;*/
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 150px;
+            font-family: fantasy;
+            padding: 0;
+            margin: 0 auto;
+            /*width: fit-content;*/
+            float: left;
+        }
+
+        h5 {
+            font-size: 20px;
+            margin-top: 0;
+            float: right;
+            float: left;
+            width: fit-content;
+        }
+
+        header li {
+            display: inline;
+        }
+
+        header #logo {
+            width: 1000px;
+        }
+
+        header #top_menu {
+            margin: 50px 0 0 0;
+            margin-right: 30px;
+            float: right;
+            padding: 0px;
+            padding-right: 30px;
+            margin: 0px;
+        }
+
+        nav {
+            padding: 0px;
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+
+        #main_menu {
+            align-items: center;
+            clear: both;
+            height: 40px;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+            border-top: solid 2px red;
+            border-bottom: solid 2px red;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        .item {
+            margin: 0 30px 0 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(24, 23, 23);
+        }
+
+        main {
+            /*width: 618px;*/
+            height: 580px;
+            float: left;
+            margin: 2px;
+        }
+
+        section {
+            width: 500px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        footer {
+            border-top: solid 2px red;
+            margin-top: 10px;
+            padding-top: 10px;
+            margin: 2px;
+            text-align: center;
+            float: inherit;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        div#explain {
+            font-size: 20px;
+            text-align: right;
+            position: relative;
+        }
+
+        div#explain::before {
+            background-size: cover;
+            background-color: #aaabae;
+            background: linear-gradient(270deg, #aaabae, #ffffff);
+            /*background-image: url("img/f3c25f771e07ce031adaa9e8c8da685a.jpg");*/
+            content: "";
+            z-index: -1;
+            opacity: 0.4;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        div#grid {
+            display: grid;
+            grid-template-columns: 800px 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>FOOD VILLAGE</h1>
+            <h5>A restaurant with your taste.</h5>
+        </div>
+        <div id="top_menu">
+            <ul>
+                <li><a href="login.html">로그인 | </a></li>
+                <li><a href="new.html"> 회원가입</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <nav>
+        <ul id="main_menu">
+            <li class="item"><a href="hw07.html">HOME</a></li>
+            <li class="item"><a href="../hw06/restaurant.html" target="_blank">RESTAURANT</a></li>
+            <li class="item"><a href="../hw06/kitchen.html" target="_blank">KITCHEN</a></li>
+            <li class="item"><a href="../hw06/recommend.html" target="_blank">RECOMMENDATION</a></li>
+            <li class="item"><a href="market.html" target="_blank">MARKET</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <div id="grid">
+                <img src="../hw06/img/burger.jpg">
+                <div id="explain">
+                    푸드 빌리지는<br>제가 추천하는 맛집의 리스트를<br> 확인해볼 수 있고,<br>
+                    당신이 좋아하는 음식점을<br> 추가할 수 있는 곳으로<br> 모두의 취향을 담은 음식을<br> 구경할 수 있는 공간입니다.<br>
+                    당신의 취향을 이 곳에서 찾아보고,<br>당신의 취향으로 <br>이 곳을 채워주세요.<br>
+                    <br>
+                    The food village is<br>the list of good restaurants I recommend.<br>
+                    I can check it out<br>Your favorite restaurant<br>Where you can add it.<br>
+                    It's all about preference for everybody<br>It's a place where you can see.<br>
+                    Fing your taste in this place,<br>and fill your taste<br>in this place.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="clear"></div>
+    <div class="line"></div>
+    <footer>&copy; jieun-s</footer>
+</body>
+
+</html>
