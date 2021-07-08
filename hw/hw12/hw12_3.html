@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hw12_3</title>
+</head>
+
+<body>
+    <script>
+        var lan;
+        lan = prompt("영문자를 입력하세요 : ");
+
+        if (lan == null) {
+            document.write("입력을 취소했습니다.");
+        }
+        else if(64<lan.charAt(0)<91){
+            alert("입력한 글자는 대문자"+lan+"입니다");
+        }
+        else if(96<lan.charAt(0)<123){
+            alert("입력한 글자는 소문자"+lan+"입니다");
+        }
+        else{
+            alert(lan+"은 영문자가 아닙니다.");
+        }
+
+    </script>
+</body>
+
+</html>

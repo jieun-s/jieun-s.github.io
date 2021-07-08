@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hw12_1</title>
+    <style>
+        input {
+            background-color: #7ddbde;
+            margin-right: 30px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var result=0;
+        var i=0;
+        function c10(){
+            for(i=0; i<=10; i++){
+                result+=i;
+            }
+            alert('10까지 더한 값은 '+result+'입니다');
+        }
+
+        function c50(){
+            for(i=0; i<=50; i++){
+                result+=i;
+            }
+            alert('10까지 더한 값은 '+result+'입니다');S
+        }
+
+        function c100(){
+            for(i=0; i<=100; i++){
+                result+=i;
+            }
+            alert('10까지 더한 값은 '+result+'입니다');
+        }
+    </script>
+
+    <input type="button" value="10까지 더하기" id="c10" onclick="c10()">
+    <input type="button" value="50까지 더하기" id="c50" onclick="c50()">
+    <input type="button" value="100까지 더하기" id="c100" onclick="c100()">
+</body>
+
+</html>
