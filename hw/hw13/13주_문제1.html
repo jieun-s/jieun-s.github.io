@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <title>hw13_1</title>
+    <script src="../../jquery-3.6.0.js"></script>
+    <script>
+        var n=0;
+        $(document).ready(function() {
+            $("div.c1").mousedown(function() {
+                $("p:first", this).text("mouse down");
+                $("p:last", this).text("총 클릭 횟수 " + ++n);
+            });
+        });
+        var i=0;
+        $(document).ready(function() {
+            $("div.c2").mousedown(function() {
+                $("p:first", this).text("mouse down");
+                $("p:last", this).text("총 클릭 횟수 " + ++i);
+            });
+        });
+        var j=0;
+        $(document).ready(function() {
+            $("div.c3").mousedown(function() {
+                $("p:first", this).text("mouse down");
+                $("p:last", this).text("총 클릭 횟수 " + ++j);
+            });
+        });
+    </script>
+
+    <style>
+        div.c1 {
+            width: 200px;
+            height: 100px;
+            background-color: #FFFF00;
+        }
+        div.c2 {
+            width: 200px;
+            height: 100px;
+            background-color: #ADD8E6;
+        }
+        div.c3 {
+            width: 200px;
+            height: 100px;
+            background-color: #00FFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c1">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+
+    <div class="c2">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+
+    <div class="c3">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+</body>
+
+</html>
