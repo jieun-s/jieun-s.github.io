@@ -14,10 +14,11 @@
         if (lan == null) {
             document.write("입력을 취소했습니다.");
         }
-        else if(64<lan.charAt(0)<91){
+        else if(64<lan.charCodeAt(0) && lan.charCodeAt(0)<91){
             alert("입력한 글자는 대문자"+lan+"입니다");
         }
-        else if(96<lan.charAt(0)<123){
+      
+        else if(96<lan.charCodeAt(0) && lan.charCodeAt(0)<123){
             alert("입력한 글자는 소문자"+lan+"입니다");
         }
         else{
